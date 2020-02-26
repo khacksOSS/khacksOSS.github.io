@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content>
+    <meta name="description" content>
+    <title>KarunyaHacks</title>
+    <!--favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/logo-head.png">
+    <!--bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!--owl carousel css-->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <!--magnific popup css-->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <!--font awesome css-->
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+    <!--icomoon icon css-->
+    <link rel="stylesheet" type="text/css" href="css/icomoon.css">
+    <!--icofont css-->
+    <link rel="stylesheet" type="text/css" href="css/icofont.min.css">
+    <!--animate css-->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!--main css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--responsive css-->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <style>
+        @media screen and (max-width:768px) {
+            .gallery-nav {
+                display: block;
+            }
+            #docker-btn, #alexa-btn, #web-btn, #blockchain-btn{
+                margin: 5px;
+            }
+            #docker, #alexa, #web, #blockchain{
+                margin-left: 35px;
+                margin-bottom: 10px;
+            }
+            .col-md-4{
+                margin-bottom: 10px!important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--start header-->
+    <header id="header" class="two">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- Logo -->
+                    <a class="logo" href="#"><img src="../images/logo-kh.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"><i class="icofont-navigation-menu"></i></span>
+                    </button>
+                    <!-- navbar links -->
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item download-btn">
+                                <a class="nav-link" href="index.html">Return to Homepage</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--end header-->
+
+    <section id="team-area" data-scroll-index="5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                    <div class="section-heading text-center">
+                        <h5>Our creative gallery</h5>
+                        <h2>Have a look</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cumque nesciunt similique
+                            eligendi aut sit fugit, porro velit tempora quisquam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="btn-group col-lg-6 offset-lg-3 col-md-8 offset-md-2 mb-5 team-nav gallery-nav" role="group"
+                    aria-label="...">
+                    <button type="button" class="btn btn-default btn-lg team-btn1 team-active-btn" id="docker-btn"
+                        onclick="display_docker()">Docker</button>
+                    <button type="button" class="btn btn-default btn-lg team-btn2" id="alexa-btn"
+                        onclick="display_alexa()">Amazon Alexa</button>
+                    <button type="button" class="btn btn-default btn-lg team-btn2" id="web-btn"
+                        onclick="display_web()">Web Development</button>
+                    <button type="button" class="btn btn-default btn-lg team-btn2" id="blockchain-btn"
+                        onclick="display_blockchain()">Blockchain</button>
+                </div>
+            </div>
+
+            <script>
+                function display_docker() {
+                    var btn1 = document.getElementById("docker-btn");
+                    var btn2 = document.getElementById("alexa-btn");
+                    var btn3 = document.getElementById("web-btn");
+                    var btn4 = document.getElementById("blockchain-btn");
+                    var docker = document.getElementById("docker");
+                    var alexa = document.getElementById("alexa");
+                    var web = document.getElementById("web");
+                    var blockchain = document.getElementById("blockchain");
+                    docker.style.display = "";
+                    alexa.style.display = "none";
+                    web.style.display = "none";
+                    blockchain.style.display = "none";
+                    btn1.classList.add("team-active-btn");
+                    btn2.classList.remove("team-active-btn");
+                    btn3.classList.remove("team-active-btn");
+                    btn4.classList.remove("team-active-btn");
+                }
+
+                function display_alexa() {
+                    var btn1 = document.getElementById("docker-btn");
+                    var btn2 = document.getElementById("alexa-btn");
+                    var btn3 = document.getElementById("web-btn");
+                    var btn4 = document.getElementById("blockchain-btn");
+                    var docker = document.getElementById("docker");
+                    var alexa = document.getElementById("alexa");
+                    var web = document.getElementById("web");
+                    var blockchain = document.getElementById("blockchain");
+                    docker.style.display = "none";
+                    alexa.style.display = "";
+                    web.style.display = "none";
+                    blockchain.style.display = "none";
+                    btn1.classList.remove("team-active-btn");
+                    btn2.classList.add("team-active-btn");
+                    btn3.classList.remove("team-active-btn");
+                    btn4.classList.remove("team-active-btn");
+                }
+
+                function display_web() {
+                    var btn1 = document.getElementById("docker-btn");
+                    var btn2 = document.getElementById("alexa-btn");
+                    var btn3 = document.getElementById("web-btn");
+                    var btn4 = document.getElementById("blockchain-btn");
+                    var docker = document.getElementById("docker");
+                    var alexa = document.getElementById("alexa");
+                    var web = document.getElementById("web");
+                    var blockchain = document.getElementById("blockchain");
+                    docker.style.display = "none";
+                    alexa.style.display = "none";
+                    web.style.display = "";
+                    blockchain.style.display = "none";
+                    btn1.classList.remove("team-active-btn");
+                    btn2.classList.remove("team-active-btn");
+                    btn3.classList.add("team-active-btn");
+                    btn4.classList.remove("team-active-btn");
+                }
+
+                function display_blockchain() {
+                    var btn1 = document.getElementById("docker-btn");
+                    var btn2 = document.getElementById("alexa-btn");
+                    var btn3 = document.getElementById("web-btn");
+                    var btn4 = document.getElementById("blockchain-btn");
+                    var docker = document.getElementById("docker");
+                    var alexa = document.getElementById("alexa");
+                    var web = document.getElementById("web");
+                    var blockchain = document.getElementById("blockchain");
+                    docker.style.display = "none";
+                    alexa.style.display = "none";
+                    web.style.display = "none";
+                    blockchain.style.display = "";
+                    btn1.classList.remove("team-active-btn");
+                    btn2.classList.remove("team-active-btn");
+                    btn3.classList.remove("team-active-btn");
+                    btn4.classList.add("team-active-btn");
+                }
+            </script>
+
+            <div id="docker">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                </div><br />
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                </div>
+            </div>
+
+            <div id="alexa" style="display: none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                </div><br />
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                </div>
+            </div>
+
+            <div id="web" style="display: none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                </div><br />
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                </div>
+            </div>
+
+            <div id="blockchain" style="display: none;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                </div><br />
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/300">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!--main js-->
+    <script src="js/custom.js"></script>
+    <!--jQuery js-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--proper js-->
+    <script src="js/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--counter js-->
+    <script src="js/waypoints.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <!--magnic popup js-->
+    <script src="js/magnific-popup.min.js"></script>
+    <!--owl carousel js-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--owl scrollIt js-->
+    <script src="js/scrollIt.min.js"></script>
+    <!--validator js-->
+    <script src="js/validator.min.js"></script>
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <!--ajax newsletter js-->
+    <script src="js/ajax-newsletter-form.js"></script>
+</body>
+
+</html>

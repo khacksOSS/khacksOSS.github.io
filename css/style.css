@@ -181,7 +181,7 @@ p {
     top: 0;
     width: 100%;
     z-index: 99;
-    padding: 15px 0;
+    padding: 15px 0px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -216,7 +216,7 @@ p {
 }
 
 .navbar-nav .nav-item {
-    padding: 0 6px;
+    padding: 0 10px;
 }
 
 .navbar-nav .nav-link.active:after,
@@ -1756,6 +1756,40 @@ p {
     text-transform: uppercase
 }
 
+.team-btn1{
+    background-image: -webkit-gradient( linear, left top, right top, from(rgb(157, 91, 254)), to(rgb(56, 144, 254)));
+    background-image: linear-gradient( 90deg, rgb(157, 91, 254) 0%, rgb(56, 144, 254) 100%);
+    -webkit-box-shadow: 0px 13px 20px 0px rgba(0, 14, 254, 0.3);
+    box-shadow: 0px 13px 20px 0px rgba(0, 14, 254, 0.3);
+    color: white;
+}
+
+.team-btn2{
+    background-image: -webkit-gradient( linear, left top, right top, from(rgb(157, 91, 254)), to(rgb(56, 144, 254)));
+    background-image: linear-gradient( 90deg, rgb(157, 91, 254) 0%, rgb(56, 144, 254) 100%);
+    -webkit-box-shadow: 0px 13px 20px 0px rgba(0, 14, 254, 0.3);
+    box-shadow: 0px 13px 20px 0px rgba(0, 14, 254, 0.3);
+    color: white;
+}
+
+.team-btn1:hover, .team-btn2:hover{
+    color: black;
+    background-image: none;
+    background-color: #DAE0E2;
+}
+
+.team-active-btn{
+    color: black;
+    background-image: none;
+    background-color: #DAE0E2;
+}
+
+@media screen and (max-width:768px){
+    .team-nav{
+        margin-left: 30px;
+    }
+}
+
 /*-------------------------------------------------------------------------------------
     testimonial area
 ---------------------------------------------------------------------------------------*/
@@ -2906,3 +2940,16 @@ p {
 .demo-header-cont a:hover {
     background-size: 200% auto
 }
+
+
+
+/*-------------------------------------------------------------------------------------
+    gallery area
+---------------------------------------------------------------------------------------*/
+
+/* @media screen and (min-width:768px){
+    #gallery-br{
+        display:none;
+    }
+} */
+
